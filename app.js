@@ -1,7 +1,7 @@
-const recipes = document.querySelector('#recipes')
+const recipes = document.querySelector('#document')
 
-console.log(recipes);
+console.log(document);
 
-const handleClick = (recipe) => {
-    recipes.src = `./recipes/${recipe}.html`
+const handleClick = (koshary) => {
+    document.src = `./document/${koshary}.html`
 }
