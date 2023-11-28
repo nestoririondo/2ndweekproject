@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Noto Serif', serif;    color: #222;
+    line-height: 2;
+    background-color: #FCFCFC;
+}
+h1, h2 {
+    background-color: #f0f0f0;
+    box-shadow: 3px 3px 0px rgb(255, 200, 59);
+    /* how to make these headings as long as its content */
+    display: inline-block;
+    padding: 0 1rem;
+    border: 1px solid #dddddd;
+    font-weight: 400;
+}
+table {
+    box-shadow: 3px 3px 0px rgb(255, 200, 59);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container__top {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container__top__left {
+    flex: 1 1 60%;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+.container__top__left h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.container__top__left__icons {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    padding: 0rem 1rem;
+    font-size: 0.8rem;
+    /* align in the main axis */
+    align-items:;
+}
+
+
+.container__top__left > p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    text-align: justify;
+}
+.container__top__ingredients {
+    padding: 2rem;
+    padding-bottom: 0;
+    flex: 1 1 30%;
+    min-width: 280px;
+}
+.container__top__ingredients table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #eeeeee;
+}
+.container__top__ingredients table tr td {
+    padding: 0.5rem;
+    border: 1px solid #dddddd;
+    font-size: small;
+}
+.container__top__ingredients table tr td:first-child {
+    white-space: nowrap;
+}
+.container__top__ingredients table tr:nth-child(odd) {
+    background-color: #e2dede;
+}
+.container__preparation {
+    padding: 2rem;
+    text-align: justify;
+    width: 70%;
+    padding-right: 5rem;
+}
+.container__preparation h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.container__preparation p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.recipe-image {
+    /* border: 2px solid red; */
+    padding-right: 4rem;
+    position: fixed;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    width: 90%;
+    min-width: 400px;
+    height: auto;
+    z-index: 10;
+    transition: opacity 0.5s;
+}
+.recipe-image-chicken {
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 90%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    max-width: 70vw;
+    height: auto;
+    z-index: 10;
+    transition: opacity 0.5s;
+}
+@media screen and (max-width: 699px) {
+
+    .container__preparation {
+        width: 100%;
+        padding-right: 2rem;
+      
+    }
