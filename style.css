@@ -21,17 +21,21 @@
     display: inline-flex;
     list-style: none;
     color: #fff;
+    margin: 10px;
+
 }
 
 .menu-bar ul li{
     width: 120px;
-    margin: 15px;
     padding: 15px;
 }
 
 .menu-bar ul li a{
     text-decoration: none;
     color: #fff;
+    border-radius: 10px;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
 .menu-bar ul li:hover{
@@ -39,6 +43,7 @@
     border-radius: 10px;
     border-radius: 3px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .sub-menu-1{
@@ -50,12 +55,11 @@
     position: absolute;
     background-color: #000000;
     margin-top: 15px;
-    margin-left: -15px;
+    margin-left: -15px;    
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul{
     display: block;
-    margin: 10px;
 }
 
 
@@ -73,7 +77,6 @@
 
 .menu-bar ul li:hover .sub-menu-2 ul{
     display: block;
-    margin: 10px;
 }
 
 
@@ -91,7 +94,25 @@
 
 .menu-bar ul li:hover .sub-menu-3 ul{
     display: block;
-    margin: 10px;
+}
+
+@media (max-width: 900px) {
+    .menu-bar ul li{
+        width: 100%;
+        display: block;
+    }
+    .menu-bar ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.5s;
+        display: none;
+    }
+    .menu-bar ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+
 }
 
 
