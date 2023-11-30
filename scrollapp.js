@@ -39,6 +39,7 @@ const doTheThumbs = (event) => {
         thumbsDown.style.color = 'red';
         newP.innerHTML = 'Learn to cook!'
         newP.style.color = 'red';
+        thumbsUp.style.color = 'black'
         if (feedbackDiv.childElementCount < 1) {
             feedbackDiv.append(newP);
         } else {
@@ -50,6 +51,7 @@ const doTheThumbs = (event) => {
         thumbsUp.style.color = 'green';
         newP.innerHTML = 'Awesome!'
         newP.style.color = 'green';
+        thumbsDown.style.color = 'black'
         if (feedbackDiv.childElementCount < 1) {
             feedbackDiv.append(newP);
         } else {
@@ -72,7 +74,8 @@ thumbsDown.addEventListener('mouseover', () => {
 );
 thumbsUp.addEventListener('mouseout', () => {
     thumbsUp.style.color = 'black';
-}
+    }
+
 );
 thumbsDown.addEventListener('mouseout', () => {
     thumbsDown.style.color = 'black';
@@ -122,3 +125,5 @@ star2.addEventListener('mouseover', doTheStars);
 star3.addEventListener('mouseover', doTheStars);
 star4.addEventListener('mouseover', doTheStars);
 star5.addEventListener('mouseover', doTheStars);
+
+// End of stars functionality
