@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --secondary-color: #FFC83B;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -17,15 +20,17 @@ body {
 }
 h1, h2 {
     background-color: #f0f0f0;
-    box-shadow: 3px 3px 0px rgb(255, 200, 59);
+    box-shadow: 3px 3px 0px var(--secondary-color);
     /* how to make these headings as long as its content */
     display: inline-block;
     padding: 0 1rem;
     border: 1px solid #dddddd;
     font-weight: 400;
+    border-radius: 5px;
+    border-top-left-radius: 0;
 }
 table {
-    box-shadow: 3px 3px 0px rgb(255, 200, 59);
+    box-shadow: 3px 3px 0px var(--secondary-color);
 }
 
 .container {
@@ -63,6 +68,13 @@ table {
     margin-bottom: 1rem;
     font-weight: 300;
     text-align: justify;
+}
+
+.stars {
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    font-weight: 300;
 }
 .container__top__ingredients {
     padding: 2rem;

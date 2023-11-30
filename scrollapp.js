@@ -25,3 +25,24 @@ image.addEventListener('mouseout', () => {
         image.style.opacity = '1';
     }
 });
+
+const feedbackDiv = document.querySelector('#feedback');
+const thumbsUp = document.querySelector('#thumbsup');
+const newP = document.createElement('p')
+
+thumbsUp.addEventListener('click', () => {
+    thumbsUp.style.color = 'green';
+    newP.innerHTML = 'I know, right?'
+    newP.style.color = 'green';
+    feedback.append(newP);
+    document.querySelector('#thumbsdown').remove();
+})
+
+const thumbsDown = document.querySelector('#thumbsdown');
+thumbsDown.addEventListener('click', () => {
+    thumbsDown.style.color = 'red';
+    newP.innerHTML = 'Learn to cook!'
+    newP.style.color = 'red';
+    feedback.append(newP);
+    document.querySelector('#thumbsup').remove();
+})
