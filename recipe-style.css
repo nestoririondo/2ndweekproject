@@ -14,7 +14,8 @@ a {
     text-decoration: none;
 }
 body {
-    font-family: 'Noto Serif', serif;    color: #222;
+    font-family: 'Noto Serif', serif;    
+    color: #222;
     line-height: 2;
     background-color: #FCFCFC;
 }
@@ -70,11 +71,23 @@ table {
     text-align: justify;
 }
 
+.thumbs,
 .stars {
     padding: 1rem;
     display: flex;
     gap: 2rem;
     font-weight: 300;
+    align-items: baseline;
+}
+
+.stars {
+    margin-top: -1.5rem;
+    gap: 1rem;
+}
+.stars i,
+.thumbs i {
+    font-size: 1.2rem;
+    transition: all 0.3s;
 }
 .container__top__ingredients {
     padding: 2rem;
@@ -103,7 +116,6 @@ table {
     text-align: justify;
     width: 70%;
     padding-right: 5rem;
-    margin-top: -5rem;
 }
 .container__preparation h2 {
     font-size: 1.5rem;

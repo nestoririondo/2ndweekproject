@@ -26,23 +26,99 @@ image.addEventListener('mouseout', () => {
     }
 });
 
+
+// Thumbs Up/Down Functionality
 const feedbackDiv = document.querySelector('#feedback');
 const thumbsUp = document.querySelector('#thumbsup');
-const newP = document.createElement('p')
-
-thumbsUp.addEventListener('click', () => {
-    thumbsUp.style.color = 'green';
-    newP.innerHTML = 'I know, right?'
-    newP.style.color = 'green';
-    feedback.append(newP);
-    document.querySelector('#thumbsdown').remove();
-})
-
 const thumbsDown = document.querySelector('#thumbsdown');
-thumbsDown.addEventListener('click', () => {
-    thumbsDown.style.color = 'red';
-    newP.innerHTML = 'Learn to cook!'
-    newP.style.color = 'red';
-    feedback.append(newP);
-    document.querySelector('#thumbsup').remove();
-})
+
+
+const doTheThumbs = (event) => {
+    const newP = document.createElement('p')
+    if (event.target.id === 'thumbsdown') {
+        thumbsDown.style.color = 'red';
+        newP.innerHTML = 'Learn to cook!'
+        newP.style.color = 'red';
+        if (feedbackDiv.childElementCount < 1) {
+            feedbackDiv.append(newP);
+        } else {
+            feedbackDiv.removeChild(feedbackDiv.lastChild);
+            feedbackDiv.append(newP);
+        }
+        document.querySelector('#thumbsup').style.display = 'hidden';
+    } else if (event.target.id === 'thumbsup') {
+        thumbsUp.style.color = 'green';
+        newP.innerHTML = 'Awesome!'
+        newP.style.color = 'green';
+        if (feedbackDiv.childElementCount < 1) {
+            feedbackDiv.append(newP);
+        } else {
+            feedbackDiv.removeChild(feedbackDiv.lastChild);
+            feedbackDiv.append(newP);
+        }
+        document.querySelector('#thumbsdown').style.display = 'hidden';
+    }
+}
+
+thumbsUp.addEventListener('click', doTheThumbs);
+thumbsDown.addEventListener('click', doTheThumbs);
+
+thumbsUp.addEventListener('mouseover', () => {
+    thumbsUp.style.color = 'green';
+});
+thumbsDown.addEventListener('mouseover', () => {
+    thumbsDown.style.color = 'red'; 
+}
+);
+thumbsUp.addEventListener('mouseout', () => {
+    thumbsUp.style.color = 'black';
+}
+);
+thumbsDown.addEventListener('mouseout', () => {
+    thumbsDown.style.color = 'black';
+}
+);
+
+// End of thumbs up/down functionality
+
+// Stars functionality
+const star1 = document.querySelector('#star1');
+const star2 = document.querySelector('#star2');
+const star3 = document.querySelector('#star3');
+const star4 = document.querySelector('#star4');
+const star5 = document.querySelector('#star5');
+
+const doTheStars = (event) => {
+    star1.style.color = 'black';
+    star2.style.color = 'black';
+    star3.style.color = 'black';
+    star4.style.color = 'black';
+    star5.style.color = 'black';
+    if (event.target.id === 'star1') {
+        star1.style.color = 'gold';
+    } else if (event.target.id === 'star2') {
+        star1.style.color = 'gold';
+        star2.style.color = 'gold';
+    } else if (event.target.id === 'star3') {
+        star1.style.color = 'gold';
+        star2.style.color = 'gold';
+        star3.style.color = 'gold';
+    } else if (event.target.id === 'star4') {
+        star1.style.color = 'gold';
+        star2.style.color = 'gold';
+        star3.style.color = 'gold';
+        star4.style.color = 'gold';
+    } else if (event.target.id === 'star5') {
+        star1.style.color = 'gold';
+        star2.style.color = 'gold';
+        star3.style.color = 'gold';
+        star4.style.color = 'gold';
+        star5.style.color = 'gold';
+    }
+}
+
+star1.addEventListener('mouseover', doTheStars);
+star2.addEventListener('mouseover', doTheStars);
+star3.addEventListener('mouseover', doTheStars);
+star4.addEventListener('mouseover', doTheStars);
+star5.addEventListener('mouseover', doTheStars);
