@@ -132,4 +132,158 @@ iframe {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    
+}
+
+footer{
+    background-color:#f0f0f0;
+    font-family: 'Noto Serif', serif;
+  
+}
+
+.upper-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logof{
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   font-size: 3rem;
+}
+
+
+.logof p{
+    max-width: 20rem;
+    font-size: 3rem;
+    font-weight: 100;
+    padding-left: 1rem;
+    color: #000000;
+    background: linear-gradient(to right,  #000000, #000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: sans-serif;
+}
+
+footer p{
+    padding-top: 1rem;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 20rem;
+}
+
+.footer-contact{
+    padding-top: 1.5rem;
+    gap: 1rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.footer-contact h4{
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.footer-news h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.adress{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.phone{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.newsletter input{
+    padding: 1.25rem 2.5rem;
+    border: 1px solid #e7e7e7;
+    color: #e9e9e9;
+}
+
+.newsletter img{
+    padding: 1.25rem 2.5rem;
+    background-color: #9c98b0;
+    
+}
+
+.newsletter{
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.down-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 1rem;
+}
+.footer-social{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.footer-links{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content:center;
+}
+
+.footer-copyright{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.footer-copyright p{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
 }
