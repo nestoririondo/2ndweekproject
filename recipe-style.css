@@ -59,8 +59,6 @@ table {
     gap: 1rem;
     padding: 0rem 1rem;
     font-size: 0.8rem;
-    /* align in the main axis */
-    align-items:;
 }
 
 
@@ -82,12 +80,13 @@ table {
 
 .stars {
     margin-top: -1.5rem;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 .stars i,
 .thumbs i {
     font-size: 1.2rem;
     transition: all 0.3s;
+    margin-top: -4px;
 }
 .container__top__ingredients {
     padding: 2rem;

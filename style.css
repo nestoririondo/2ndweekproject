@@ -30,12 +30,12 @@
     display: inline-flex;
     list-style: none;
     color: #f0f0f0;
-    margin: 10px;
+    margin: 10px 0px;
 
 }
 
 .menu-bar ul li{
-    padding: 15px;
+    padding: 1rem;
     text-align: center;
 }
 
