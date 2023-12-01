@@ -20,7 +20,7 @@ body {
     background-color: #FCFCFC;
 }
 .bigcontainer {
-    background-image: url("../images/bg.png");
+    background-image: url(images/bg.png);
     background-color: #FCFCFC;
     background-repeat: no-repeat;
     background-size: cover;
