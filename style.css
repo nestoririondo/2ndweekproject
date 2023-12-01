@@ -139,4 +139,149 @@ iframe {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    
+}
+
+footer{
+    background-color:#f0f0f0;
+    font-family: 'Noto Serif', serif; 
+}
+
+.upper-part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: baseline;
+}
+.footerh4logo {
+    font-size: 1rem;
+}
+.footer-logo {
+    flex: 1 1 200px;
+}
+.logof{
+   text-decoration: none;
+   font-size: 1rem;
+}
+
+
+.footer-contact {
+    flex: 1 1 200px;
+
+}
+footer p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.adress {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.phone {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.footer-contact h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+footer h4 {
+    margin-bottom: 1rem;
+}
+.footer-news {
+    flex: 1 1 30%;
+
+}
+.footer-news h4{
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+
+.newsletter {
+    display: flex;
+    gap: 0.5rem;
+}
+.newsletter input{
+    border: 1px solid #e7e7e7;
+    color: rgb(89, 89, 89);
+    padding: 0.5rem 1rem;
+}
+.newsletter button {
+    color: white;
+    background-color: #9c98b0;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer
+}
+.newsletter button:hover{
+    background-color: #FFC83B;
+    transition: 0.2s;
+}
+.newsletter button:active {
+    background-color: #FFC83B;
+    transform: translateY(4px);
+    transition: 0.2s;
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.lower-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer ul li a{
+    color: rgb(63, 63, 63);
+    text-decoration: none;
+}
+
+.footer-links{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content:center;
+    padding: 0rem 1rem;
+    font-size: 0.8rem;
+}
+
+.footer-copyright p{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 300;
 }
